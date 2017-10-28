@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/rounak/Documents/GitHub/linear-list/LinearList.cpp
+iostream
+-
+LinearList.h
+/Users/rounak/Documents/GitHub/linear-list/LinearList.h
+
+/Users/rounak/Documents/GitHub/linear-list/LinearList.h
+iostream
+-
+
