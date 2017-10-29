@@ -3,5 +3,5 @@ project(linear_list)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES LinearList.h LinearList.cpp)
+set(SOURCE_FILES LinearList.h LinearList.cpp LinkedListChain.cpp LinkedListChain.h ChainNode.h)
 add_executable(linear_list ${SOURCE_FILES})

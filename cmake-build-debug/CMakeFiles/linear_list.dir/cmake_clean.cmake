@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/linear_list.dir/LinearList.cpp.o"
+  "CMakeFiles/linear_list.dir/LinkedListChain.cpp.o"
+  "CMakeFiles/linear_list.dir/ChainNode.cpp.o"
   "linear_list.pdb"
   "linear_list"
 )

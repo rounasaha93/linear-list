@@ -123,6 +123,33 @@ linear_list/fast:
 	$(MAKE) -f CMakeFiles/linear_list.dir/build.make CMakeFiles/linear_list.dir/build
 .PHONY : linear_list/fast
 
+ChainNode.o: ChainNode.cpp.o
+
+.PHONY : ChainNode.o
+
+# target to build an object file
+ChainNode.cpp.o:
+	$(MAKE) -f CMakeFiles/linear_list.dir/build.make CMakeFiles/linear_list.dir/ChainNode.cpp.o
+.PHONY : ChainNode.cpp.o
+
+ChainNode.i: ChainNode.cpp.i
+
+.PHONY : ChainNode.i
+
+# target to preprocess a source file
+ChainNode.cpp.i:
+	$(MAKE) -f CMakeFiles/linear_list.dir/build.make CMakeFiles/linear_list.dir/ChainNode.cpp.i
+.PHONY : ChainNode.cpp.i
+
+ChainNode.s: ChainNode.cpp.s
+
+.PHONY : ChainNode.s
+
+# target to generate assembly for a file
+ChainNode.cpp.s:
+	$(MAKE) -f CMakeFiles/linear_list.dir/build.make CMakeFiles/linear_list.dir/ChainNode.cpp.s
+.PHONY : ChainNode.cpp.s
+
 LinearList.o: LinearList.cpp.o
 
 .PHONY : LinearList.o
@@ -150,6 +177,33 @@ LinearList.cpp.s:
 	$(MAKE) -f CMakeFiles/linear_list.dir/build.make CMakeFiles/linear_list.dir/LinearList.cpp.s
 .PHONY : LinearList.cpp.s
 
+LinkedListChain.o: LinkedListChain.cpp.o
+
+.PHONY : LinkedListChain.o
+
+# target to build an object file
+LinkedListChain.cpp.o:
+	$(MAKE) -f CMakeFiles/linear_list.dir/build.make CMakeFiles/linear_list.dir/LinkedListChain.cpp.o
+.PHONY : LinkedListChain.cpp.o
+
+LinkedListChain.i: LinkedListChain.cpp.i
+
+.PHONY : LinkedListChain.i
+
+# target to preprocess a source file
+LinkedListChain.cpp.i:
+	$(MAKE) -f CMakeFiles/linear_list.dir/build.make CMakeFiles/linear_list.dir/LinkedListChain.cpp.i
+.PHONY : LinkedListChain.cpp.i
+
+LinkedListChain.s: LinkedListChain.cpp.s
+
+.PHONY : LinkedListChain.s
+
+# target to generate assembly for a file
+LinkedListChain.cpp.s:
+	$(MAKE) -f CMakeFiles/linear_list.dir/build.make CMakeFiles/linear_list.dir/LinkedListChain.cpp.s
+.PHONY : LinkedListChain.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... linear_list"
+	@echo "... ChainNode.o"
+	@echo "... ChainNode.i"
+	@echo "... ChainNode.s"
 	@echo "... LinearList.o"
 	@echo "... LinearList.i"
 	@echo "... LinearList.s"
+	@echo "... LinkedListChain.o"
+	@echo "... LinkedListChain.i"
+	@echo "... LinkedListChain.s"
 .PHONY : help
 
 
