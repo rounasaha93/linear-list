@@ -80,9 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/rounak/Documents/GitHub/linear-list/ChainNode.cpp">
-			<Option target="linear_list"/>
-		</Unit>
 		<Unit filename="/Users/rounak/Documents/GitHub/linear-list/ChainNode.h">
 			<Option target="linear_list"/>
 		</Unit>

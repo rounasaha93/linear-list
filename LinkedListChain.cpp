@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int main() {
+int mainoffload2() {
     LinkedListChain<int> chain;
 
     //INSERTION CHECKS
@@ -40,4 +40,5 @@ int main() {
     int pos = chain.search(x);
     cout << "Position of searched key " << x << " is : " << pos << endl;
     return 0;
+
 }

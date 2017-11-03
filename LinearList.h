@@ -30,6 +30,12 @@ public:
     void Output(ostream &out) const;                //Output the list
     LinearList<T> &DeleteSimilar(); //Delete Duplicate Elements in the Array
     LinearList<T> &Insert(int k, const T &x); //Insertion
+
+    //ASSUMED THE FOLLOWING METHODS WORK ONLY IF THE LIST IS SORTED OR ORDERED IN A DESCENDING FASHION
+    int BinarySearchIterative(int x, int low,
+                              int high); //Finds element x in list and returns poistion mid
+    int
+    BinarySearchRecursive(int x, int low, int high); //Function is same as iterative method. Practically this is faster
     //Private Class Members
 private:
     int length;
@@ -125,6 +131,41 @@ void LinearList<T>::Output(ostream &out) const {
         out << element[i] << " ";
     }
 };
+
+template<class T>
+int LinearList<T>::BinarySearchRecursive(int x, int low, int high) {
+    if (high > low) {
+        int mid = (low + high) / 2;
+        int temp;
+        if (element[mid] == x) {
+            return ++mid;
+        } else if (element[mid] < x) {
+            return BinarySearchRecursive(x, mid + 1, high);
+        } else {
+            return BinarySearchRecursive(x, low, mid);
+        }
+    } else {
+        return 0;
+    }
+
+}
+
+template<class T>
+int LinearList<T>::BinarySearchIterative(int x, int low, int high) {
+    int mid = (low + high) / 2;
+    while (low <= high) {
+        if (element[mid] == x) {
+            return ++mid;
+        } else if (element[mid] < x) {
+            low = mid + 1;
+            mid = (low + high) / 2;
+        } else {
+            high = mid;
+            mid = (low + high) / 2;
+        }
+    }
+    return 0;
+}
 
 
 #endif

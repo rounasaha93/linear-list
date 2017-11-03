@@ -7,20 +7,6 @@
 
 #include "LinkedListChain.h"
 
-template<class T>
-class Chain;
-
-/*
-template<class T>
-class ChainNode {
-public:
-    friend class Chain<T>;
-
-private:
-    T data;
-    ChainNode<T> *link;
-};
-*/
 
 template<class T>
 class LinkedListChain;
